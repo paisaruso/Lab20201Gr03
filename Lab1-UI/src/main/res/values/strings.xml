@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Labs20201Gr03</string>
+    <string-array name="paises">
+        <item>Argentina</item>
+       <item>Bolivia</item>
+       <item>Brasil</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>Guayana Francesa</item>
+        <item>Granada</item>
+        <item>Guatemala</item>
+        <item>Guayana</item>
+        <item>Haití</item>
+         <item>Honduras</item>
+       <item>Jamaica</item>
+       <item>México</item>
+       <item>Nicaragua</item>
+       <item>Paraguay</item>
+       <item>Panamá</item>
+        <item>Perú</item>
+        <item>Puerto Rico</item>
+        <item>República Dominicana</item>
+        <item>Surinam</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+    <string-array name="ciudades">
+        <item>Bogotá</item>
+        <item>Medellín</item>
+        <item>Cali</item>
+        <item>Barranquilla</item>
+        <item>Cartagena de indias</item>
+        <item>Soledad</item>
+        <item>Cúcuta</item>
+        <item>Soacha</item>
+        <item>Ibagué</item>
+        <item>Bucaramanga</item>
+        <item>Villavicencio</item>
+        <item>Guatemala</item>
+        <item>Bello</item>
+        <item>Valledupar</item>
+        <item>Pereira</item>
+        <item>Buenaventura</item>
+        <item>Pasto</item>
+        <item>Manizales</item>
+        <item>Montería</item>
+        <item>Neiva</item>
+    </string-array>
+</resources>
