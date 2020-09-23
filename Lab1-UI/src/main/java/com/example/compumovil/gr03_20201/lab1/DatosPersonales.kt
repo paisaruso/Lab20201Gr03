@@ -9,6 +9,7 @@ class DatosPersonales : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_datos_personales)
+
         val objetoIntent: Intent=intent
         var Nombre = objetoIntent.getStringExtra("Nombre")
         var Apellido = objetoIntent.getStringExtra("Apellido")
@@ -16,9 +17,11 @@ class DatosPersonales : AppCompatActivity() {
         var SexoM = objetoIntent.getStringExtra("Sexo")
         txtSexo.text = "Sexo $SexoM"
         var SexoF = objetoIntent.getStringExtra("Sexo")
-        txtSexo.text = "Sexo $SexoF"
+        txtPais.text = "Sexo $SexoF"
         var Fecha = objetoIntent.getStringExtra("Fecha")
-        txtFech.text = "Fecha $Fecha"
+        txtFecha.text = "Fecha $Fecha"
+
+
         var Telefono = objetoIntent.getStringExtra("Telefono")
         txtTelefono.text = "Telefono $Telefono"
         var correo = objetoIntent.getStringExtra("Correo")
@@ -29,6 +32,12 @@ class DatosPersonales : AppCompatActivity() {
         txtCiudad.text = "Ciudad $ciudad"
         var direccion = objetoIntent.getStringExtra("Direccion")
         txtDireccion.text = "Direccion $direccion"
+
+        btnRegresar.setOnClickListener {
+            val intent: Intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

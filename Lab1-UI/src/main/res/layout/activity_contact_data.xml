@@ -97,4 +97,5 @@
         android:drawableLeft="@drawable/ic_baseline_location_city_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextViewPais" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

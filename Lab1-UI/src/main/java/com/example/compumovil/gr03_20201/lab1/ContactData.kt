@@ -24,6 +24,22 @@ class ContactData : AppCompatActivity() {
         val ciudad = resources.getStringArray(R.array.ciudades)
         val arrayAdapter2 = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,ciudad)
         autoCompleteTextViewCiudad.setAdapter(arrayAdapter2)
+
+        btnSigu.setOnClickListener {
+            var Telefono:String = editTextTextTelefono.text.toString()
+            var correo:String = editTextTextCorreo.text.toString()
+            var pais:String = autoCompleteTextViewPais.text.toString()
+            var ciudad:String = autoCompleteTextViewCiudad.text.toString()
+            var direcc:String = editTextTextDireccion.text.toString()
+            val intent: Intent = Intent(this, DatosPersonales::class.java)
+            intent.putExtra("Celefono", Telefono)
+            intent.putExtra("Correo", correo)
+            intent.putExtra("Pais",pais)
+            intent.putExtra("Ciudad",ciudad)
+            intent.putExtra("Direccion",direcc)
+            startActivity(intent)
+        }
+
     }
 
     fun validateData(view: View) {
