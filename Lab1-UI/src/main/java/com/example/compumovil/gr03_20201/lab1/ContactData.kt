@@ -6,10 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_contact_data.*
 import kotlinx.android.synthetic.main.activity_main.*
-
-
+import kotlinx.android.synthetic.main.activity_personal_data.*
 
 
 class ContactData : AppCompatActivity() {
@@ -26,31 +26,26 @@ class ContactData : AppCompatActivity() {
         autoCompleteTextViewCiudad.setAdapter(arrayAdapter2)
 
         btnSigu.setOnClickListener {
-            var Telefono:String = editTextTextTelefono.text.toString()
-            var correo:String = editTextTextCorreo.text.toString()
-            var pais:String = autoCompleteTextViewPais.text.toString()
-            var ciudad:String = autoCompleteTextViewCiudad.text.toString()
-            var direcc:String = editTextTextDireccion.text.toString()
-            val intent: Intent = Intent(this, DatosPersonales::class.java)
-            intent.putExtra("Celefono", Telefono)
-            intent.putExtra("Correo", correo)
-            intent.putExtra("Pais",pais)
-            intent.putExtra("Ciudad",ciudad)
-            intent.putExtra("Direccion",direcc)
-            startActivity(intent)
+
+            if (editTextTextTelefono.text.toString() != "" && autoCompleteTextViewPais.text.toString() != "" && editTextTextCorreo.text.toString() != "") {
+                val intent: Intent = Intent(this, DatosPersonales::class.java)
+                var Telefono:Int = editTextTextTelefono.text.toString().toInt()
+                var correo:String = editTextTextCorreo.text.toString()
+                var pais:String = autoCompleteTextViewPais.text.toString()
+                var ciudad:String = autoCompleteTextViewCiudad.text.toString()
+                var direcc:String = editTextTextDireccion.text.toString()
+                intent.putExtra("Celefono", Telefono)
+                intent.putExtra("Correo", correo)
+                intent.putExtra("Pais",pais)
+                intent.putExtra("Ciudad",ciudad)
+                intent.putExtra("Direccion",direcc)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "ingrese campos obligatorios", Toast.LENGTH_LONG).show()
+            }
+
         }
 
     }
 
-    fun validateData(view: View) {
-        if (editTextTextTelefono.text.toString() != "" && autoCompleteTextViewPais.text.toString() != "" && editTextTextCorreo.text.toString() != "") {
-            Log.d("Telefono", editTextTextTelefono.text.toString())
-            Log.d("Correo", editTextTextCorreo.text.toString())
-            Log.d("País", autoCompleteTextViewCiudad.text.toString())
-            Log.d("Ciudad", autoCompleteTextViewPais.text.toString())
-            Log.d("Dirección", editTextTextDireccion.text.toString())
-        } else {
-            Log.d("ERROR", "Faltan datos por ingresar")
-        }
-    }
 }

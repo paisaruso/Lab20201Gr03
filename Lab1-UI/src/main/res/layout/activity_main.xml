@@ -14,7 +14,7 @@
         android:layout_marginStart="132dp"
         android:layout_marginLeft="132dp"
         android:layout_marginTop="168dp"
-        android:text="Datos personales"
+        android:text="@string/Pd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,7 +25,7 @@
         android:layout_marginStart="108dp"
         android:layout_marginLeft="108dp"
         android:layout_marginTop="132dp"
-        android:text="Informacion de contacto"
+        android:text="@string/Cd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPersonalData" />
 </androidx.constraintlayout.widget.ConstraintLayout>

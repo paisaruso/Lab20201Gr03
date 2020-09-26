@@ -15,7 +15,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="Información de Contacto"
+        android:text="@string/infor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +29,7 @@
         android:layout_marginTop="40dp"
         android:drawableLeft="@drawable/ic_baseline_add_ic_call_24"
         android:ems="10"
-        android:hint="Teléfono"
+        android:hint="@string/tel"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -43,7 +43,7 @@
         android:layout_marginTop="32dp"
         android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
         android:ems="10"
-        android:hint="Corrreo"
+        android:hint="@string/correo"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextTelefono" />
@@ -57,7 +57,7 @@
         android:layout_marginTop="32dp"
         android:drawableLeft="@drawable/ic_round_public_24"
         android:ems="10"
-        android:hint="Dirección"
+        android:hint="@string/direc"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextViewCiudad" />
@@ -68,9 +68,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="280dp"
         android:layout_marginLeft="280dp"
-        android:layout_marginTop="48dp"
-        android:onClick="validateData"
-        android:text="Siguiente"
+        android:layout_marginTop="64dp"
+        android:text="@string/sigu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextDireccion" />
 
@@ -81,8 +80,8 @@
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="24dp"
-        android:hint="País"
         android:drawableLeft="@drawable/ic_baseline_place_24"
+        android:hint="@string/pais"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextCorreo" />
 
@@ -93,9 +92,8 @@
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="36dp"
-        android:hint="Ciudad"
         android:drawableLeft="@drawable/ic_baseline_location_city_24"
+        android:hint="@string/ciu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextViewPais" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

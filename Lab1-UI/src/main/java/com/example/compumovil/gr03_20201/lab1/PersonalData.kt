@@ -27,25 +27,47 @@ class PersonalData : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personal_data)
-        spinner = findViewById(R.id.spinner)
+        spinner = findViewById(R.id.spinner1)
         arrayAdapter = ArrayAdapter(applicationContext, android.R.layout.simple_spinner_item, itemList)
         spinner?.adapter = arrayAdapter
         spinner?.onItemSelectedListener = this
 
         btnSiguiente.setOnClickListener {
-            var Nombre:String = editTextTextPersonName.text.toString()
-            var Apellido:String = editTextTextPersonName2.text.toString()
-            var Masculino:String = radioSexMas.text.toString()
-            var Femenino:String = radioSexFem.text.toString()
-            var fecha:String = txtCalendar.text.toString()
-            val intent: Intent = Intent(this, DatosPersonales::class.java)
-            intent.putExtra("Nombre", Nombre)
-            intent.putExtra("Apellido", Apellido)
-            intent.putExtra("Sexo",Masculino)
-            intent.putExtra("Sexo",Femenino)
-            intent.putExtra("Fecha",fecha)
-            startActivity(intent)
+
+            if (editTextTextPersonName.text.toString() != "" && editTextTextPersonName2.text.toString() != "" && txtCalendar.text.toString() != "") {
+
+                val intent: Intent = Intent(this, DatosPersonales::class.java)
+                var Nombre:String = editTextTextPersonName.text.toString()
+                var Apellido:String = editTextTextPersonName2.text.toString()
+                radioGroup.setOnCheckedChangeListener { group, checkedId ->
+                    if (checkedId==R.id.radioSexMas){
+                        var Sexo:String = radioSexMas.text.toString()
+                        intent.putExtra("Sexo",Sexo)
+                    }
+                    if (checkedId==R.id.radioSexFem){
+                        var Sexo:String = radioSexFem.text.toString()
+                        intent.putExtra("Sexo",Sexo)
+                    }
+                }
+
+
+                var fecha:String = txtCalendar.text.toString()
+                var Escolari:String = spinner1.selectedItem.toString()
+                intent.putExtra("Nombre", Nombre)
+                intent.putExtra("Apellido", Apellido)
+
+                intent.putExtra("Fecha",fecha)
+                intent.putExtra("Escolaridad", Escolari)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "ingrese campos obligatorios", Toast.LENGTH_LONG).show()
+            }
+
         }
+
+    }
+
+    fun validatePerson(view: View) {
 
     }
 

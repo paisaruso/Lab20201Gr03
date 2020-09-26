@@ -50,4 +50,27 @@
         <item>Montería</item>
         <item>Neiva</item>
     </string-array>
+
+    <string name="info" translatable="false">Informacion Personal</string>
+    <string name="nombre" translatable="false">Nombre</string>
+    <string name="apellido" translatable="false">Apellidos</string>
+    <string name="sexo" translatable="false">Sexo</string>
+    <string name="fem" translatable="false">Femenino</string>
+    <string name="ma" translatable="false">Masculino</string>
+    <string name="fecha" translatable="false">Fecha de Nacimiento</string>
+    <string name="cambiar" translatable="false">Cambiar</string>
+    <string name="sigu" translatable="false">Siguiente</string>
+
+    <string name="tel" translatable="false">Telefono*</string>
+    <string name="correo" translatable="false">Correo*</string>
+    <string name="pais" translatable="false">País*</string>
+    <string name="ciu" translatable="false">Ciudad</string>
+    <string name="direc" translatable="false">Dirección</string>
+    <string name="infor" translatable="false">Informacion de Contacto</string>
+
+    <string name="Pd" translatable="false">Datos Personales</string>
+    <string name="Cd" translatable="false">Información de Contacto</string>
+    <string name="informa" translatable="false">Informacion Personal</string>
+    <string name="regre" translatable="false">Regresar</string>
+
 </resources>
