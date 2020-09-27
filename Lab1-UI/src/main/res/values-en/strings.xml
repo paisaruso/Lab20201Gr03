@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="info" translatable="false">Personal information</string>
-    <string name="nombre" translatable="false">Name</string>
-    <string name="apellido" translatable="false">Last names</string>
+    <string name="nombre" translatable="false">Name*</string>
+    <string name="apellido" translatable="false">Last names*</string>
     <string name="sexo" translatable="false">Sex</string>
     <string name="fem" translatable="false">Female</string>
     <string name="ma" translatable="false">Male</string>
-    <string name="fecha" translatable="false">Birthdate</string>
+    <string name="fecha" translatable="false">Birthdate*</string>
     <string name="cambiar" translatable="false">Change</string>
     <string name="sigu" translatable="false">Next</string>
 

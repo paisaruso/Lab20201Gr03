@@ -52,12 +52,12 @@
     </string-array>
 
     <string name="info" translatable="false">Informacion Personal</string>
-    <string name="nombre" translatable="false">Nombre</string>
-    <string name="apellido" translatable="false">Apellidos</string>
+    <string name="nombre" translatable="false">Nombre*</string>
+    <string name="apellido" translatable="false">Apellidos*</string>
     <string name="sexo" translatable="false">Sexo</string>
     <string name="fem" translatable="false">Femenino</string>
     <string name="ma" translatable="false">Masculino</string>
-    <string name="fecha" translatable="false">Fecha de Nacimiento</string>
+    <string name="fecha" translatable="false">Fecha de Nacimiento*</string>
     <string name="cambiar" translatable="false">Cambiar</string>
     <string name="sigu" translatable="false">Siguiente</string>
 
